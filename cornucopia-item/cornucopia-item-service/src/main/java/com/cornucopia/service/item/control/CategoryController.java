@@ -12,10 +12,12 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 /**
+ *
  * @author cornucopia
  * @version 1.0
  * @since 2019-08-15
  */
+
 @RestController
 @RequestMapping("category")
 public class CategoryController {
@@ -25,7 +27,8 @@ public class CategoryController {
     private CategoryService categoryService;
 
     @GetMapping("list")
-    public ResponseEntity<List<Category>> queryCategoryListByPid(@RequestParam("pid") Long pid){
+    public ResponseEntity<List<Category>> queryCategoryListByPid(@RequestParam("pid") Long pid) {
         return ResponseEntity.ok(categoryService.getCategoryListByPid(pid));
     }
+
 }

@@ -3,10 +3,19 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cornucopia-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cornucopia-common/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cornucopia-eureka-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cornucopia-eureka-server/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cornucopia-gateway" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cornucopia-gateway/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cornucopia-item" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cornucopia-item/cornucopia-item-interface" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cornucopia-item/cornucopia-item-interface/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cornucopia-item/cornucopia-item-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cornucopia-item/cornucopia-item-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cornucopia-item/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cornucopia-item/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cornucopia-upload" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cornucopia-upload/src/main/java" charset="UTF-8" />
   </component>
 </project>

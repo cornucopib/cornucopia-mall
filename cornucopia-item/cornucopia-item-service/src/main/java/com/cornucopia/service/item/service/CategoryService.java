@@ -11,6 +11,10 @@ import org.springframework.util.CollectionUtils;
 import java.util.List;
 
 /**
+ * 分类管理
+ * <p>
+ * 普通数据查询
+ *
  * @author cornucopia
  * @version 1.0
  * @since 2019-08-15
@@ -18,6 +22,8 @@ import java.util.List;
 
 @Service
 public class CategoryService {
+
+
     @Autowired
     private CategoryMapper categoryMapper;
 
@@ -26,9 +32,23 @@ public class CategoryService {
         Category t = new Category();
         t.setParentId(pid);
         List<Category> list = categoryMapper.select(t);
-        if(CollectionUtils.isEmpty(list)){
+        if (CollectionUtils.isEmpty(list)) {
             throw new ResponseException(ExceptionEnum.CATEGORY_NOT_FOUND);
         }
         return list;
     }
+
+    /**
+     * 通过ids查询分类列表
+     * @param ids
+     * @return
+     */
+    public List<Category> queryByIds(List<Long> ids) {
+        List<Category> list = categoryMapper.selectByIdList(ids);
+        if (CollectionUtils.isEmpty(list)) {
+            throw new ResponseException(ExceptionEnum.CATEGORY_NOT_FOUND);
+        }
+        return list;
+    }
+
 }

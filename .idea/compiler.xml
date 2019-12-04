@@ -2,15 +2,17 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="cornucopia-eureka-server" />
-        <module name="cornucopia-item-interface" />
         <module name="cornucopia-common" />
-        <module name="cornucopia-item-service" />
         <module name="cornucopia-gateway" />
+        <module name="cornucopia-item-service" />
+        <module name="cornucopia-item-interface" />
+        <module name="cornucopia-upload" />
       </profile>
     </annotationProcessing>
   </component>
@@ -21,6 +23,7 @@
       <module name="cornucopia-gateway" options="-parameters" />
       <module name="cornucopia-item-interface" options="-parameters" />
       <module name="cornucopia-item-service" options="-parameters" />
+      <module name="cornucopia-upload" options="-parameters" />
     </option>
   </component>
 </project>
